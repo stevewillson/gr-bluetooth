@@ -1,15 +1,10 @@
-GR-Bluetooth
-============
+# gr-bluetooth
+--------
 Welcome to gr-bluetooth!
 
-gr-bluetooth is an implementation of the Bluetooth baseband layer for GNU Radio
-for experimentation and teaching students about Software Defined Radio, it
-should not be used for Bluetooth communications as it is not a complete
-software stack.
+gr-bluetooth is an implementation of the Bluetooth baseband layer for GNU Radio for experimentation and teaching students about Software Defined Radio, it should not be used for Bluetooth communications as it is not a complete software stack.
 
-The gr-bluetooth web site is: http://gr-bluetooth.sourceforge.net
-
-Building
+# Building
 --------
 gr-bluetooth currently requires gnuradio 3.7.0 or later.
 
@@ -22,23 +17,10 @@ To build gr-bluetooth:
   sudo make install
 ```
 
-License
--------
-Copyright 2008 - 2013 Dominic Spill, Michael Ossmann
+# Getting Help
+--------
+For assistance with gr-bluetooth general use or development, please look at the [issues on the GitHub project](https://github.com/greatscottgadgets/gr-bluetooth/issues). This is the preferred place to ask questions or open issues so that others may locate the answer to your question in the future.
 
-This file is part of gr-bluetooth
+We invite you to join our community discussions on [Discord](https://discord.gg/rsfMw3rsU8). Note that while technical support requests are welcome here, we do not have support staff on duty at all times. Be sure to also submit an issue on GitHub if you’ve found a bug or if you want to ensure that your request will be tracked and not overlooked.
 
-gr-bluetooth is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2, or (at your option)
-any later version.
-
-gr-bluetooth is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with gr-bluetooth; see the file COPYING.  If not, write to
-the Free Software Foundation, Inc., 51 Franklin Street,
-Boston, MA 02110-1301, USA.
+GitHub issues on this repository that are labelled "technical support" by Great Scott Gadgets employees can expect a response time of two weeks. We currently do not have expected response times for other GitHub issues or pull requests for this repository.
