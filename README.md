@@ -89,19 +89,8 @@ We call the order of bits in a typical integer (big-endian or little-endian depe
 If we need an array of one bit per integer that is MSB first, we append "_host" to the variable name for clarity.  Similarly, if we need an integer representing more than one bit with the bits reversed (with respect to host order), we append "_air" to the variable name.  When possible we try to avoid these situations.  
 
 ## Patches
-`patches/usrp2_alias.patch`:
+### `patches/usrp2_alias.patch`
+This is a USRP2 FPGA patch to enable intentional aliasing. It is a quick hack that probably only works as intended with a decimation rate of 4. The patch is against svn revision 10194, a beta USRP2 release. For FPGA development environment information see: http://gnuradio.org/trac/wiki/USRP2GenFAQ
 
-	This is a USRP2 FPGA patch to enable intentional aliasing.  It is a quick
-	hack that probably only works as intended with a decimation rate of 4.  The
-	patch is against svn revision 10194, a beta USRP2 release.  For FPGA
-	development environment information see:
-	http://gnuradio.org/trac/wiki/USRP2GenFAQ
-
-`patches/wireshark-1.x.y-btbb.patch`:
-
-	These patchs add the Bluetooth baseband dissector plugin to the appropriate
-	Wireshark source tree.  In addition to the patch, you need to copy (or
-	check out in place) gr-bluetooth/wireshark/plugins/btbb under the
-	wireshark-1.x.y/plugins directory.  The patch doesn't work with
-	Wireshark svn, but it isn't hard to manually edit an svn tree as
-	required with this patch as your guide.
+### `patches/wireshark-1.x.y-btbb.patch`
+These patchs add the Bluetooth baseband dissector plugin to the appropriate Wireshark source tree.  In addition to the patch, you need to copy (or check out in place) gr-bluetooth/wireshark/plugins/btbb under the wireshark-1.x.y/plugins directory.  The patch doesn't work with Wireshark svn, but it isn't hard to manually edit an svn tree as required with this patch as your guide.
